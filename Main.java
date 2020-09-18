@@ -22,8 +22,20 @@ class Main {
      */
      static public boolean isPalindrome(String str)
      {
-        
-        return false;
+			 String reverse = new String();
+			 int a = 0;
+			 int b = 0;
+        for(int i = str.length() - 1; i >= 0; i++){
+					reverse = reverse + str.charAt(i);
+				}
+				for(int i = 0; i<str.length(); i++){
+					a = (int)str.charAt(i);
+					b = (int)str.charAt(i);
+					if(a != b){
+						return false;
+					}
+				}
+        return true;
         
      }
 
